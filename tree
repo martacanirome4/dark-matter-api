@@ -1,0 +1,17 @@
+dark-matter-api/
+├── README.md
+├── src/
+│   ├── main.py            # FastAPI app
+│   ├── model/
+│   │   ├── train.py       # builds & saves model.pkl
+│   │   ├── predict.py     # loads model.pkl → returns proba
+│   │   └── model.pkl
+│   └── utils/
+│       └── preprocessing.py
+├── tests/
+│   └── test_predict.py
+├── Dockerfile
+├── requirements.txt
+└── .github/
+    └── workflows/
+        └── ci.yml
