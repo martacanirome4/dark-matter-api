@@ -33,6 +33,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Debug owner
+        run: echo "Owner is ${{ github.repository_owner }}"
+
       - name: Log in to GHCR
         uses: docker/login-action@v3
         with:
@@ -46,6 +49,5 @@ jobs:
           context: .
           push: true
           tags: |
-            ghcr.io/${{ github.repository_owner }}/dark-matter-api:latest
-            ghcr.io/${{ github.repository_owner }}/dark-matter-api:${{ github.sha }}
-          
+            ghcr.io/martacanirome4/dark-matter-api:latest
+            ghcr.io/martacanirome4/dark-matter-api:${{ github.sha }}
