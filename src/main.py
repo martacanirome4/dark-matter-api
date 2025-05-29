@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-from src.models.predict_4F import predict_proba
+from models.predict_4F import predict_proba
 
 app = FastAPI()
 
