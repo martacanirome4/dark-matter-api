@@ -3,3 +3,5 @@ numpy
 pydantic
 fastapi
 uvicorn
+pytest
+httpx

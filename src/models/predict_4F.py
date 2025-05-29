@@ -5,5 +5,5 @@ model = joblib.load("src/models/model_ocsvm_4f.pkl")
 
 def predict_proba(input_dict):
     x = preprocess(input_dict)
-    score = model.decision_function(x)  # or model.predict(x)
-    return float(score)  # ensure it's JSON serializable
+    score = model.decision_function(x)
+    return float(score[0])

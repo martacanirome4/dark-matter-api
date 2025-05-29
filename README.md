@@ -19,7 +19,7 @@ curl -X POST http://localhost:8000/predict -d '{"flux":0.3,...}'
 Python · scikit-learn · FastAPI · Docker · GitHub Actions
 
 
-## Use Case
+## Local Use Case
 From terminal, navigate to the project and type:
 ```bash
 uvicorn src.main:app --reload

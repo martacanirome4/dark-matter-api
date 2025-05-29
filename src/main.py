@@ -12,5 +12,5 @@ class Source(BaseModel):
 
 @app.post("/predict")
 def predict(source: Source):
-    score = predict_proba(source.dict())
+    score = predict_proba(source.model_dump())
     return {"dark_matter_score": score}
